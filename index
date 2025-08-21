@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prep Penguin - Study for Industry Certifications</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">🐧 Prep Penguin</a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#courses" class="nav-link">Courses</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#" class="btn btn-outline">Sign In</a></li>
+                <li><a href="#" class="btn btn-primary">Get Started</a></li>
+                <li><button class="theme-toggle" onclick="toggleTheme()">🌙</button></li>
+            </ul>
+            
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="animate-fade-in">
+                <h1>Master Industry Certifications</h1>
+                <p>Prepare for your next certification with our comprehensive study materials, practice exams, and expert guidance.</p>
+                
+                <div class="hero-buttons">
+                    <a href="#courses" class="btn btn-primary">Browse Courses</a>
+                    <a href="#about" class="btn btn-outline">Learn More</a>
+                </div>
+            </div>
+            
+            <!-- Hero Image Placeholder -->
+            <div class="hero-image" style="width: 100%; height: 300px; background: linear-gradient(135deg, #6556ff, #1a21bc); border-radius: 1rem; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem;">
+                📚 E-Learning Platform
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="about">
+        <div class="features-container">
+            <h2 class="section-title">Why Choose Prep Penguin?</h2>
+            <p class="section-subtitle">We provide everything you need to succeed in your certification journey</p>
+            
+            <div class="features-grid">
+                <div class="feature-card animate-fade-in">
+                    <div class="feature-icon">📖</div>
+                    <h3>Comprehensive Study Materials</h3>
+                    <p>Access detailed study guides, video lectures, and interactive content designed by industry experts.</p>
+                </div>
+                
+                <div class="feature-card animate-fade-in">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Practice Exams</h3>
+                    <p>Test your knowledge with realistic practice exams that simulate the actual certification experience.</p>
+                </div>
+                
+                <div class="feature-card animate-fade-in">
+                    <div class="feature-icon">👨‍🏫</div>
+                    <h3>Expert Instructors</h3>
+                    <p>Learn from certified professionals with years of industry experience and teaching expertise.</p>
+                </div>
+                
+                <div class="feature-card animate-fade-in">
+                    <div class="feature-icon">📊</div>
+                    <h3>Progress Tracking</h3>
+                    <p>Monitor your learning progress with detailed analytics and personalized study recommendations.</p>
+                </div>
+                
+                <div class="feature-card animate-fade-in">
+                    <div class="feature-icon">🏆</div>
+                    <h3>High Success Rate</h3>
+                    <p>Join thousands of students who have successfully passed their certifications with our help.</p>
+                </div>
+                
+                <div class="feature-card animate-fade-in">
+                    <div class="feature-icon">📱</div>
+                    <h3>Mobile Learning</h3>
+                    <p>Study anywhere, anytime with our mobile-responsive platform and offline content access.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses" id="courses">
+        <div class="courses-container">
+            <h2 class="section-title">Popular Certification Courses</h2>
+            <p class="section-subtitle">Choose from our wide range of industry-recognized certification programs</p>
+            
+            <div class="courses-grid">
+                <div class="course-card animate-fade-in">
+                    <div class="course-image">☁️</div>
+                    <div class="course-content">
+                        <span class="course-badge">Bestseller</span>
+                        <h3 class="course-title">AWS Cloud Practitioner</h3>
+                        <p class="course-description">Master the fundamentals of AWS cloud computing and prepare for the Cloud Practitioner certification exam.</p>
+                        <div class="course-meta">
+                            <span>⭐ 4.8 (1,234 reviews)</span>
+                            <span>👥 5,678 students</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="course-card animate-fade-in">
+                    <div class="course-image">🔒</div>
+                    <div class="course-content">
+                        <span class="course-badge">New</span>
+                        <h3 class="course-title">CompTIA Security+</h3>
+                        <p class="course-description">Learn cybersecurity fundamentals and prepare for the industry-standard Security+ certification.</p>
+                        <div class="course-meta">
+                            <span>⭐ 4.9 (892 reviews)</span>
+                            <span>👥 3,456 students</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="course-card animate-fade-in">
+                    <div class="course-image">🌐</div>
+                    <div class="course-content">
+                        <span class="course-badge">Popular</span>
+                        <h3 class="course-title">Cisco CCNA</h3>
+                        <p class="course-description">Build networking skills and prepare for the Cisco Certified Network Associate certification.</p>
+                        <div class="course-meta">
+                            <span>⭐ 4.7 (2,134 reviews)</span>
+                            <span>👥 4,789 students</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="course-card animate-fade-in">
+                    <div class="course-image">📊</div>
+                    <div class="course-content">
+                        <span class="course-badge">Featured</span>
+                        <h3 class="course-title">PMP Certification</h3>
+                        <p class="course-description">Advance your project management career with comprehensive PMP exam preparation.</p>
+                        <div class="course-meta">
+                            <span>⭐ 4.8 (987 reviews)</span>
+                            <span>👥 2,345 students</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="course-card animate-fade-in">
+                    <div class="course-image">💻</div>
+                    <div class="course-content">
+                        <span class="course-badge">Updated</span>
+                        <h3 class="course-title">Microsoft Azure</h3>
+                        <p class="course-description">Master Azure fundamentals and prepare for Microsoft cloud certification exams.</p>
+                        <div class="course-meta">
+                            <span>⭐ 4.6 (1,456 reviews)</span>
+                            <span>👥 3,987 students</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="course-card animate-fade-in">
+                    <div class="course-image">🗄️</div>
+                    <div class="course-content">
+                        <span class="course-badge">Comprehensive</span>
+                        <h3 class="course-title">Oracle Database</h3>
+                        <p class="course-description">Learn database administration and prepare for Oracle certification exams.</p>
+                        <div class="course-meta">
+                            <span>⭐ 4.5 (756 reviews)</span>
+                            <span>👥 1,876 students</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="newsletter-container">
+            <h2>Stay Updated</h2>
+            <p>Get the latest course updates, study tips, and exclusive offers delivered to your inbox.</p>
+            
+            <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+                <input type="email" class="newsletter-input" placeholder="Enter your email" required>
+                <button type="submit" class="btn" style="background-color: white; color: var(--primary);">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🐧 Prep Penguin</h3>
+                    <p>Your trusted partner for industry certification preparation. We help professionals advance their careers through comprehensive training and support.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Courses</h3>
+                    <a href="#">AWS Certifications</a><br>
+                    <a href="#">CompTIA Certifications</a><br>
+                    <a href="#">Cisco Certifications</a><br>
+                    <a href="#">Microsoft Certifications</a><br>
+                    <a href="#">Project Management</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <a href="#">Help Center</a><br>
+                    <a href="#">Contact Us</a><br>
+                    <a href="#">Community Forum</a><br>
+                    <a href="#">Study Groups</a><br>
+                    <a href="#">FAQ</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <a href="#">About Us</a><br>
+                    <a href="#">Careers</a><br>
+                    <a href="#">Privacy Policy</a><br>
+                    <a href="#">Terms of Service</a><br>
+                    <a href="#">Blog</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Prep Penguin. All rights reserved. Made with ❤️ for certification success.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
