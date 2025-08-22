@@ -1,0 +1,151 @@
+/* NavBar Buttons */
+.lilita-one-regular {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: url(assets/fontfam/LilitaOne-Regular.ttf) format('Lilita_One')
+}
+
+header {
+    background-color: #fb7301;
+    width: 100%;
+    height: 50px;
+}
+body {
+    background-color: #d8d8d8;
+}
+
+.BannerLogo{
+        content: url("assets/logo/Preppus_BannerLogo.png");
+        width: 123.333333321px;
+        height: 44.44px;
+        position: fixed;
+        top: 10;
+        left: 10;
+    }
+
+/* From Uiverse.io by vinodjangid07 */ 
+.NavBarBtn {
+  width: 123.333333321px;
+  height: 44.44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fb7301;
+  font-family: "Lilita One", sans-serif;
+  border: none;
+  color: white;
+  font-weight: 600;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+  position: fixed;
+  top: 10;
+  left: 200;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+
+.NavBarBtnsvgIcon {
+  width: 16px;
+}
+
+.NavBarBtnsvgIcon path {
+  fill: white;
+}
+
+.NavBarBtn::before {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  left: -100%;
+  top: 0;
+  transition-duration: .3s;
+  mix-blend-mode: difference;
+}
+
+.NavBarBtn:hover::before {
+  transition-duration: .3s;
+  transform: translate(100%,-50%);
+  border-radius: 0;
+}
+
+.NavBarBtn:active {
+  transform: translate(5px,5px);
+  transition-duration: .3s;
+}
+
+
+
+/* Logout Massuer*/
+
+/* From Uiverse.io by vinodjangid07 */ 
+.LogoutBtn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: rgb(255, 65, 65);
+}
+
+/* plus sign */
+.sign {
+  width: 100%;
+  transition-duration: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign svg {
+  width: 17px;
+}
+
+.sign svg path {
+  fill: white;
+}
+/* text */
+.text {
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition-duration: .3s;
+}
+/* hover effect on button width */
+.LogoutBtn:hover {
+  width: 125px;
+  border-radius: 40px;
+  transition-duration: .3s;
+}
+
+.LogoutBtn:hover .sign {
+  width: 30%;
+  transition-duration: .3s;
+  padding-left: 20px;
+}
+/* hover effect button's text */
+.LogoutBtn:hover .text {
+  opacity: 1;
+  width: 70%;
+  transition-duration: .3s;
+  padding-right: 10px;
+}
+/* button click effect*/
+.Btn:active {
+  transform: translate(2px ,2px);
+}
